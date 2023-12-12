@@ -1,11 +1,7 @@
 "use client";
 import React from "react";
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import { TypeAnimation } from "react-type-animation";
+import { Box, Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AboutPage from "@/pages/About";
 import HeroPage from "@/pages/Hero";
 import { sliderImages } from "@/constants";
@@ -43,12 +39,10 @@ export default function Home() {
             py: { xs: 4, md: 7 },
           }}
         >
-          <Container variant>
+          <Container>
             <Swiper
               spaceBetween={10}
               autoplay={2400}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
               breakpoints={{
                 0: {
                   slidesPerView: 4,

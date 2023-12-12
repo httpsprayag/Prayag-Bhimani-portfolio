@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import {
-  Backdrop,
-  Box,
-  Button,
-  CircularProgress,
-  Drawer,
-  Typography,
-} from "@mui/material";
-import Link from "next/link";
-import Image from "next/image";
+import { Box, Button, Typography } from "@mui/material";
 
 const ProjectCard = ({ projectImg, setActiveImg, setOpen }) => {
   return (
@@ -16,8 +7,10 @@ const ProjectCard = ({ projectImg, setActiveImg, setOpen }) => {
       <Box sx={{ backgroundColor: "#fff", borderRadius: 2 }}>
         <Button
           sx={{ width: "100%" }}
-          onClick={() => setOpen(true)}
-          setActiveImg={projectImg}
+          onClick={() => {
+            setOpen(true);
+            setActiveImg(projectImg);
+          }}
         >
           <img
             src={projectImg}

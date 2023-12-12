@@ -107,6 +107,7 @@ const HeroPage = () => {
               >
                 <Link href={"/"} className="scroll-smooth">
                   <Image
+                    alt="instagram"
                     height={40}
                     width={40}
                     src={"/assets/icons/instagram2.svg"}
@@ -114,6 +115,7 @@ const HeroPage = () => {
                 </Link>
                 <Link href={"/"} className="scroll-smooth">
                   <Image
+                    alt="facebook"
                     height={40}
                     width={40}
                     src={"/assets/icons/facebook.svg"}
@@ -122,6 +124,7 @@ const HeroPage = () => {
                 </Link>
                 <Link href={"/"} className="scroll-smooth">
                   <Image
+                    alt="linkedin"
                     height={40}
                     width={40}
                     src={"/assets/icons/linkedin.svg"}

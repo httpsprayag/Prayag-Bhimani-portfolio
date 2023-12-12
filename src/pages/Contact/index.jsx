@@ -33,8 +33,8 @@ const ContactPage = () => {
               position: "relative",
             }}
           >
-            <Grid xs={0} md={4}></Grid>
-            <Grid xs={12} md={8} sx={{ padding: 5 }}>
+            <Grid item xs={0} md={4}></Grid>
+            <Grid item xs={12} md={8} sx={{ padding: 5 }}>
               <Typography
                 sx={{
                   fontSize: { xs: 24, md: 32, lg: 40 },
@@ -134,6 +134,7 @@ const ContactPage = () => {
               >
                 <Link href={"/"} className="scroll-smooth">
                   <Image
+                    alt="instagram"
                     height={40}
                     width={40}
                     src={"/assets/icons/instagram2.svg"}
@@ -141,6 +142,7 @@ const ContactPage = () => {
                 </Link>
                 <Link href={"/"} className="scroll-smooth">
                   <Image
+                    alt="facebook"
                     height={40}
                     width={40}
                     src={"/assets/icons/facebook.svg"}
@@ -149,6 +151,7 @@ const ContactPage = () => {
                 </Link>
                 <Link href={"/"} className="scroll-smooth">
                   <Image
+                    alt="linkedin"
                     height={40}
                     width={40}
                     src={"/assets/icons/linkedin.svg"}

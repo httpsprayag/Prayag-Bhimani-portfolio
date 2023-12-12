@@ -21,7 +21,12 @@ const AboutPage = () => {
         <Container>
           {/* <BannerTitle sx={{ mt: 8 }}>MY WORK</BannerTitle> */}
           <Grid container>
-            <Grid xs={12} md={6} sx={{ px: { md: 2 }, position: "relative" }}>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{ px: { md: 2 }, position: "relative" }}
+            >
               <img
                 src="/assets/images/about-banner.png"
                 className="relative z-20 md:max-w-[475px] md:max-h-[500px] mx-auto h-full lg:max-w-[500px] lg:max-h-[575px] object-contain"
@@ -34,6 +39,7 @@ const AboutPage = () => {
               />
             </Grid>
             <Grid
+              item
               xs={12}
               md={6}
               sx={{

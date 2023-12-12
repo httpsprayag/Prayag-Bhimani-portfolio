@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import BannerTitle from "@/components/BannerTitle";
 import ProjectCard from "@/components/ProjectCard";
-import {
-  Backdrop,
-  Box,
-  CircularProgress,
-  Container,
-  Typography,
-} from "@mui/material";
+import { Backdrop, Box, Container, Typography } from "@mui/material";
 import { Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +16,6 @@ import { Close } from "@mui/icons-material";
 const WorkPage = () => {
   const [open, setOpen] = useState(false);
   const [activeImg, setActiveImg] = useState(projectsData[0].projectImg);
-  console.log({ activeImg });
   return (
     <Box
       sx={{ py: 10, background: "rgba(7,136,255,0.1)", position: "relative" }}
@@ -55,7 +48,6 @@ const WorkPage = () => {
           scrollbar={{ draggable: true }}
           modules={[Pagination]}
           onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log({ swiper })}
           className="py-2 md:py-8"
         >
           {projectsData?.map((project, index) => (

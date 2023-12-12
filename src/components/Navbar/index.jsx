@@ -8,14 +8,16 @@ import MobileNav from "../MobileNav";
 const Navbar = ({ isMobileNavOpen, setMobileNavOpen }) => {
   const [scrolling, setScrolling] = useState(false);
 
-  const changeNavbarColor = () => {
-    if (global?.window.scrollY >= 180) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-  global?.window.addEventListener("scroll", changeNavbarColor);
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (global?.window.scrollY >= 180) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    global?.window.addEventListener("scroll", changeNavbarColor);
+  }, []);
 
   return (
     <>
