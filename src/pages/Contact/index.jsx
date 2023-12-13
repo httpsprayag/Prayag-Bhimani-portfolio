@@ -12,11 +12,17 @@ import Link from "next/link";
 import React from "react";
 
 const ContactPage = () => {
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    console.log("submitted....");
+  };
   return (
     <Box
+      id="contact"
+      component={"div"}
       sx={{
         borderRadius: 6,
-        py: 10,
+        py: { xs: 5, md: 10 },
       }}
     >
       <Container>
@@ -161,7 +167,7 @@ const ContactPage = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={8}>
-              <form>
+              <form onSubmit={submitHandler}>
                 <Grid item container spacing={2} rowSpacing={4}>
                   <Grid item xs={12} md={6}>
                     <Typography>YOUR NAME</Typography>
@@ -268,14 +274,14 @@ const ContactPage = () => {
                       className="bg-[#0789FE]"
                       sx={{
                         mt: 2,
-                        py: { xs: 0.5, md: 1.5 },
-                        px: { xs: 1.75, md: 3 },
+                        py: 0.5,
                         borderRadius: 8,
                         fontSize: 20,
                         letterSpacing: 2,
                         border: "1px solid transparent",
                         fontFamily: "Bebas Neue, sans-serif",
                         width: "100%",
+                        fontSize: 16,
                         "&:hover": {
                           backgroundColor: "#050C16",
                           borderColor: "#fff",

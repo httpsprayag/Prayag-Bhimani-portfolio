@@ -18,6 +18,8 @@ const WorkPage = () => {
   const [activeImg, setActiveImg] = useState(projectsData[0].projectImg);
   return (
     <Box
+      id="projects"
+      component="div"
       sx={{ py: 10, background: "rgba(7,136,255,0.1)", position: "relative" }}
     >
       <Container>
@@ -26,6 +28,7 @@ const WorkPage = () => {
           sx={{
             fontSize: { xs: 28, md: 34, lg: 40 },
             fontFamily: "Space Grotesk,sans-serif",
+            py: { xs: 2, md: 3 },
           }}
         >
           RECENT PROJECT
@@ -56,6 +59,8 @@ const WorkPage = () => {
                 setOpen={setOpen}
                 setActiveImg={setActiveImg}
                 projectImg={project?.projectImg}
+                title={project?.title}
+                link={project?.link}
               />
             </SwiperSlide>
           ))}
@@ -70,7 +75,10 @@ const WorkPage = () => {
         onClick={() => setOpen(false)}
       >
         {/* <CircularProgress color="inherit" /> */}
-        <img src={activeImg} className="w-1/2 h-1/2 object-contain" />
+        <img
+          src={activeImg}
+          className="w-60 h-60 md:max-w-[400px] md:max-h-[400px] object-contain"
+        />
         <Close
           sx={{
             position: "absolute",

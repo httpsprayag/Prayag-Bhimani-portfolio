@@ -10,6 +10,8 @@ const AboutPage = () => {
   return (
     <>
       <Box
+        component={"div"}
+        id="about"
         sx={{
           height: "100%",
           width: "100%",
@@ -160,18 +162,16 @@ const AboutPage = () => {
               <Button
                 variant="contained"
                 color="primary"
+                className="bg-[#0789FE]"
                 sx={{
-                  // display: { xs: "blov", md: "flex" },
-                  mt: { xs: 4 },
-                  width: "max-content",
-                  py: 1.5,
-                  px: 3,
+                  display: { xs: "none", md: "flex" },
+                  mt: { xs: 2, md: 4 },
+                  py: { xs: 0.5, md: 1.5 },
+                  px: { xs: 1.75, md: 3 },
                   borderRadius: 8,
-                  fontSize: { xs: 14, md: 20 },
+                  fontSize: 20,
                   letterSpacing: 2,
-                  fontWeight: { xs: 400, md: 700 },
                   border: "1px solid transparent",
-                  textTransform: "capitalize",
                   fontFamily: "Bebas Neue, sans-serif",
                   "&:hover": {
                     backgroundColor: "#050C16",

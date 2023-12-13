@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AboutPage from "@/pages/About";
@@ -9,6 +9,7 @@ import WorkPage from "@/pages/Work";
 import ServicePage from "@/pages/Service";
 import ExperiencePage from "@/pages/Experiance";
 import ContactPage from "@/pages/Contact";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
   const settings = {
@@ -21,6 +22,13 @@ export default function Home() {
   const items = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   ];
+  const pathName = usePathname();
+  const height = global?.window?.innerHeight;
+  const height2 = global?.window?.outerHeight;
+
+  useEffect(() => {
+    console.log({ pathName });
+  }, [height, height2]);
   return (
     <>
       <Box
@@ -28,7 +36,7 @@ export default function Home() {
           width: "100%",
           height: "100%",
           background:
-            "linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%)",
+            "linear-gradient(90deg,#07233b 1.5%,#041d34 36.95%,#04192d 55.24%,#040e18 70.28%,#050c16 80.48%)",
         }}
       >
         <HeroPage />

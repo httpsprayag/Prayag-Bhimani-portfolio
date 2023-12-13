@@ -10,8 +10,6 @@ const HeroPage = () => {
     <Box
       component={"div"}
       sx={{
-        // background:
-        //   "linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%)",
         height: { md: "100%" },
         py: { xs: 4, sm: 6, md: 8, lg: 10, xl: 12 },
       }}
@@ -78,16 +76,15 @@ const HeroPage = () => {
               <Button
                 variant="contained"
                 color="primary"
+                className="bg-[#0789FE]"
                 sx={{
-                  width: { xs: "100%", sm: "max-content" },
-                  py: 1.5,
-                  px: 3,
+                  display: { xs: "none", md: "flex" },
+                  py: { xs: 0.5, md: 1.5 },
+                  px: { xs: 1.75, md: 3 },
                   borderRadius: 8,
-                  fontSize: { xs: 14, md: 20 },
+                  fontSize: 20,
                   letterSpacing: 2,
-                  fontWeight: { xs: 400, md: 700 },
                   border: "1px solid transparent",
-                  textTransform: "capitalize",
                   fontFamily: "Bebas Neue, sans-serif",
                   "&:hover": {
                     backgroundColor: "#050C16",

@@ -21,11 +21,31 @@ export const sliderImages = [
 ];
 
 export const projectsData = [
-  { projectImg: "/assets/images/projectImg1.jpg", title: "Project-1" },
-  { projectImg: "/assets/images/projectImg2.jpg", title: "Project-2" },
-  { projectImg: "/assets/images/projectImg3.jpg", title: "Project-3" },
-  { projectImg: "/assets/images/projectImg4.jpg", title: "Project-4" },
-  { projectImg: "/assets/images/projectImg5.jpg", title: "Project-5" },
+  {
+    projectImg: "/assets/images/innovative.png",
+    title: "Innovative Care",
+    link: "https://innovativecarewa.com.au/",
+  },
+  {
+    projectImg: "/assets/images/creator.png",
+    title: "Become your creator",
+    link: "https://coaching-seven.vercel.app/",
+  },
+  {
+    projectImg: "/assets/images/digidoe.png",
+    title: "Digidoe",
+    link: "https://www.digidoe.com/",
+  },
+  {
+    projectImg: "/assets/images/nivainc.png",
+    title: "NivaInc",
+    link: "https://nivainc-export.vercel.app",
+  },
+  {
+    projectImg: "/assets/images/portfolio.png",
+    title: "Portfolio Website",
+    link: "https://prayag-bhimani-portfolio.vercel.app/",
+  },
   { projectImg: "/assets/images/projectImg6.jpg", title: "Project-6" },
   { projectImg: "/assets/images/projectImg7.jpg", title: "Project-7" },
 ];

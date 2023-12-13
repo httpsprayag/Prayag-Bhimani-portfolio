@@ -18,7 +18,7 @@ const ExperianceCard = () => {
         <Box
           sx={{
             // display: "grid",
-            padding: 1.5,
+            padding: 2.5,
             // placeItems: "start",
             borderRadius: 2,
             backgroundColor: "#0788ff",
@@ -36,8 +36,9 @@ const ExperianceCard = () => {
           <Typography sx={{ mb: 2 }}>JAN 2019 - PRESENT</Typography>
           <Button
             variant="contained"
+            color="primary"
             sx={{
-              background: "#fff",
+              backgroundColor: "#fff !important",
               borderRadius: "12px",
               color: "#000",
               fontSize: 12,
